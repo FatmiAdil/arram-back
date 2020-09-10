@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Arram.Core.Common\Arram.Core.Common.csproj" />
+    <ProjectReference Include="..\Arram.DAL\Arram.Core.DAL.csproj" />
+    <ProjectReference Include="..\Arram.SearchService\Arram.Core.SearchService.csproj" />
+  </ItemGroup>
+
+ 
+
+
+</Project>

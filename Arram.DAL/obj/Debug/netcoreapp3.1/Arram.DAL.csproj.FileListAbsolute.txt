@@ -1,0 +1,5 @@
+C:\Projets\arram-back\arram-back\Arram.DAL\bin\Debug\netcoreapp3.1\Arram.DAL.deps.json
+C:\Projets\arram-back\arram-back\Arram.DAL\bin\Debug\netcoreapp3.1\Arram.DAL.dll
+C:\Projets\arram-back\arram-back\Arram.DAL\obj\Debug\netcoreapp3.1\Arram.DAL.csprojAssemblyReference.cache
+C:\Projets\arram-back\arram-back\Arram.DAL\obj\Debug\netcoreapp3.1\Arram.DAL.AssemblyInfoInputs.cache
+C:\Projets\arram-back\arram-back\Arram.DAL\obj\Debug\netcoreapp3.1\Arram.DAL.AssemblyInfo.cs

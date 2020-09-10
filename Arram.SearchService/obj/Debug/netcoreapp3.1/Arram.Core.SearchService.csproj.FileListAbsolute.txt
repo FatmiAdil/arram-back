@@ -1,0 +1,9 @@
+C:\Projets\arram-back\arram-back\Arram.SearchService\bin\Debug\netcoreapp3.1\Arram.Core.SearchService.deps.json
+C:\Projets\arram-back\arram-back\Arram.SearchService\bin\Debug\netcoreapp3.1\Arram.Core.SearchService.dll
+C:\Projets\arram-back\arram-back\Arram.SearchService\bin\Debug\netcoreapp3.1\Arram.Core.SearchService.pdb
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.csprojAssemblyReference.cache
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.AssemblyInfoInputs.cache
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.AssemblyInfo.cs
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.csproj.CoreCompileInputs.cache
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.dll
+C:\Projets\arram-back\arram-back\Arram.SearchService\obj\Debug\netcoreapp3.1\Arram.Core.SearchService.pdb

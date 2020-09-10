@@ -1,0 +1,9 @@
+C:\Projets\arram-back\arram-back\Arram.Core.Common\bin\Debug\netcoreapp3.1\Arram.Core.Common.deps.json
+C:\Projets\arram-back\arram-back\Arram.Core.Common\bin\Debug\netcoreapp3.1\Arram.Core.Common.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Common\bin\Debug\netcoreapp3.1\Arram.Core.Common.pdb
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.csprojAssemblyReference.cache
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.AssemblyInfoInputs.cache
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.AssemblyInfo.cs
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.csproj.CoreCompileInputs.cache
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Common\obj\Debug\netcoreapp3.1\Arram.Core.Common.pdb
