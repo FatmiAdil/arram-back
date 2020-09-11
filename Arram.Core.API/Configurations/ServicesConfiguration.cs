@@ -14,6 +14,11 @@ namespace Arram.Core.API.Configurations
       services.AddTransient<ILicenceLogic, LicenceLogic>();
       services.AddTransient<ILicenceRepository, LicenceRepository>();
 
+      services.AddTransient<IArticleLogic, ArticleLogic>();
+      services.AddTransient<IArticleRepository, ArticleRepository>();
+
+      services.AddTransient<IIllustrationLogic, IllustrationLogic>();
+      services.AddTransient<IIllustrationRepository, IllustrationRepository>();
 
       return services;
     }

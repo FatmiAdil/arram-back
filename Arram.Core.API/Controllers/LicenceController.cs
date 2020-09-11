@@ -30,8 +30,8 @@ namespace Arram.Core.API.Controllers
     {
       _logic = logic;
       loggingService = LoggingService;
-      logItem.NomApplication = "Tracking";
-      logItem.Layer = "Controleur Amende";
+      logItem.NomApplication = "Arram";
+      logItem.Layer = "Controleur Licence";
     }
 
 
@@ -118,7 +118,7 @@ namespace Arram.Core.API.Controllers
     public async Task<ActionResult<LicenceDTO>> Post([FromBody] LicenceDTO objet)
     {
       logItem.Layer = "Controleur";
-      logItem.MethodName = "Post Amende";
+      logItem.MethodName = "Post Licence";
       if (ModelState.IsValid)
       {
         try
@@ -136,7 +136,7 @@ namespace Arram.Core.API.Controllers
       }
       else
       {
-        return BadRequest("AmendeDTO invalide");
+        return BadRequest("LicenceDTO invalide");
       }
     }
 

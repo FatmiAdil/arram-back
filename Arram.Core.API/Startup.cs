@@ -105,7 +105,7 @@ namespace Arram.Core.API
       services.AddSwaggerGen(s => s.SwaggerDoc("v1", new OpenApiInfo
       {
         Title = "Arram API",
-        Description = "Tracking web api en dotnet core 3.1"
+        Description = "Arram web api en dotnet core 3.1"
       }));
     }
 

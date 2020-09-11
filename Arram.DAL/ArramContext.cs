@@ -15,13 +15,17 @@ namespace Arram.Core.DAL
     { }
 
     public virtual DbSet<Licence> Licence { get; set; }
-    
+    public virtual DbSet<Article> Article { get; set; }
+    public virtual DbSet<Illustration> Illustration { get; set; }
+
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
       new LicenceConfiguration(modelBuilder.Entity<Licence>());
-    
+      new ArticleConfiguration(modelBuilder.Entity<Article>());
+      new IllustrationConfiguration(modelBuilder.Entity<Illustration>());
+
     }
   }
 }

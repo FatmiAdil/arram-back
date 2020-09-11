@@ -14,3 +14,5 @@ C:\Projets\arram-back\arram-back\Arram.Core.Repo\bin\Debug\netcoreapp3.1\Arram.C
 C:\Projets\arram-back\arram-back\Arram.Core.Repo\obj\Debug\netcoreapp3.1\Arram.Core.Repo.csproj.CopyComplete
 C:\Projets\arram-back\arram-back\Arram.Core.Repo\obj\Debug\netcoreapp3.1\Arram.Core.Repo.dll
 C:\Projets\arram-back\arram-back\Arram.Core.Repo\obj\Debug\netcoreapp3.1\Arram.Core.Repo.pdb
+C:\Projets\arram-back\arram-back\Arram.Core.Repo\bin\Debug\netcoreapp3.1\Arram.Core.DTO.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Repo\bin\Debug\netcoreapp3.1\Arram.Core.DTO.pdb

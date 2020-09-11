@@ -22,9 +22,9 @@ namespace Arram.Core.Repo.Repositories
     {
       _context = context;
       _logger = logger;
-      logitem = new LogItem() { NomApplication = "Tracking", Layer = "Repository" };
+      logitem = new LogItem() { NomApplication = "Arram", Layer = "Repository" };
     }
-    private async Task<bool> AmendeExists(int id, CancellationToken ct = default) =>
+    private async Task<bool> LicenceExists(int id, CancellationToken ct = default) =>
         await _context.Licence.AnyAsync(a => a.Id == id, ct);
 
     public async Task<Licence> GetAsync(int id)

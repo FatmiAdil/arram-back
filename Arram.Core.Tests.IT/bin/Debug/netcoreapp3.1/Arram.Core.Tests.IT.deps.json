@@ -3048,6 +3048,7 @@
       },
       "Arram.Core.DAL/1.0.0": {
         "dependencies": {
+          "Arram.Core.DTO": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.0"
         },
         "runtime": {

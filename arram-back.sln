@@ -25,11 +25,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{399D8157-0E2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structure", "Structure", "{1572B30A-7399-4098-A62A-80CAE1AB70AE}"
 	ProjectSection(SolutionItems) = preProject
+		Article_structure.sql = Article_structure.sql
+		Illustration_structure.sql = Illustration_structure.sql
 		Licence_structure.sql = Licence_structure.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{160DBD84-C92B-4937-95C8-6D31080E083C}"
 	ProjectSection(SolutionItems) = preProject
+		Article_datas.sql = Article_datas.sql
+		Illustration_datas.sql = Illustration_datas.sql
 		Licence_datas.sql = Licence_datas.sql
 	EndProjectSection
 EndProject

@@ -215,6 +215,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
+      },
+      "Arram.Core.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Arram.Core.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Arram.Core.DTO.dll": {}
+        }
       }
     }
   },
@@ -624,10 +634,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Arram.Core.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Arram.Core.DTO/Arram.Core.DTO.csproj",
+      "msbuildProject": "../Arram.Core.DTO/Arram.Core.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Arram.Core.DTO >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.0"
     ]
   },
@@ -663,7 +679,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projets\\arram-back\\arram-back\\Arram.Core.DTO\\Arram.Core.DTO.csproj": {
+              "projectPath": "C:\\Projets\\arram-back\\arram-back\\Arram.Core.DTO\\Arram.Core.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

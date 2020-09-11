@@ -97,7 +97,7 @@ namespace Arram.Core.Tests.IT
       // Add configuration for client
       Client = Server.CreateClient();
       Client.BaseAddress = new Uri("https://localhost:5001");
-      //Client.BaseAddress = new Uri("http://tracking.atlas-flotte.com");
+      //Client.BaseAddress = new Uri("http://arram.tracking.atlas-flotte.com");
       Client.DefaultRequestHeaders.Accept.Clear();
       Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
     }

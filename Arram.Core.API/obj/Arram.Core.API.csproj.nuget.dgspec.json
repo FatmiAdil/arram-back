@@ -471,7 +471,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projets\\arram-back\\arram-back\\Arram.Core.DTO\\Arram.Core.DTO.csproj": {
+                "projectPath": "C:\\Projets\\arram-back\\arram-back\\Arram.Core.DTO\\Arram.Core.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
