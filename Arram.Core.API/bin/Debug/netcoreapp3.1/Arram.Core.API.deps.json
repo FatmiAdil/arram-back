@@ -3029,6 +3029,46 @@
           "System.Threading": "4.3.0"
         }
       },
+      "System.Spatial/5.8.4": {
+        "runtime": {
+          "lib/netstandard1.1/System.Spatial.dll": {
+            "assemblyVersion": "5.8.4.0",
+            "fileVersion": "5.8.4.63386"
+          }
+        },
+        "resources": {
+          "lib/netstandard1.1/de/System.Spatial.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard1.1/es/System.Spatial.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard1.1/fr/System.Spatial.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard1.1/it/System.Spatial.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netstandard1.1/ja/System.Spatial.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netstandard1.1/ko/System.Spatial.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netstandard1.1/ru/System.Spatial.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netstandard1.1/zh-Hans/System.Spatial.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netstandard1.1/zh-Hant/System.Spatial.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/System.Spatial.dll": {}
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -3261,6 +3301,9 @@
         }
       },
       "Arram.Core.DTO/1.0.0": {
+        "dependencies": {
+          "System.Spatial": "5.8.4"
+        },
         "runtime": {
           "Arram.Core.DTO.dll": {}
         },
@@ -6759,6 +6802,13 @@
       "sha512": "sha512-PnXp38O9q/2Oe4iZHMH60kinScv6QiiL2XH54Pj2t0Y6c2zKPEiAZsM/M3wBOHLNTBDFP0zfy13WN2M0qFz5jg==",
       "path": "system.security.securestring/4.3.0",
       "hashPath": "system.security.securestring.4.3.0.nupkg.sha512"
+    },
+    "System.Spatial/5.8.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0xPUcjZX/SlFA34BeXGC3oPX0wX98ndJApYjdDnisWubuAprbqAX8mRPoM10vFfUE6VQyyBj7u2we7be52D+BQ==",
+      "path": "system.spatial/5.8.4",
+      "hashPath": "system.spatial.5.8.4.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

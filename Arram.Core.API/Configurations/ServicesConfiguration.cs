@@ -20,6 +20,9 @@ namespace Arram.Core.API.Configurations
       services.AddTransient<IIllustrationLogic, IllustrationLogic>();
       services.AddTransient<IIllustrationRepository, IllustrationRepository>();
 
+      services.AddTransient<IRelaisLogic, RelaisLogic>();
+      services.AddTransient<IRelaisRepository, RelaisRepository>();
+
       return services;
     }
 

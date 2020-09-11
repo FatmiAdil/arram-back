@@ -4,6 +4,6 @@ C:\Projets\arram-back\arram-back\Arram.Core.DTO\bin\Debug\netcoreapp3.1\Arram.Co
 C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.csprojAssemblyReference.cache
 C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.AssemblyInfoInputs.cache
 C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.AssemblyInfo.cs
-C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.csproj.CoreCompileInputs.cache
 C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.dll
 C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.pdb
+C:\Projets\arram-back\arram-back\Arram.Core.DTO\obj\Debug\netcoreapp3.1\Arram.Core.DTO.csproj.CoreCompileInputs.cache

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PNcU8O+kC7223sPp3meUmNeGZujjmQ3HGjHPEeYkwA5LGd0WfZHFy9DI8HcxwcjLO2Ig2vdP6rlnKERiqmRdnA==",
+  "dgSpecHash": "GSJzQNQOgL0Ww4uVfMiFF7xEtRdAQxThd498CLRnksuUjM0QK+PloN3CEHcN14asJDw7UOidOVGe+qHFZG2pVg==",
   "success": true,
   "projectFilePath": "C:\\Projets\\arram-back\\arram-back\\Arram.DAL\\Arram.Core.DAL.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,8 @@
     "C:\\Users\\adil_\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.0\\microsoft.extensions.primitives.3.1.0.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.collections.immutable\\1.7.0\\system.collections.immutable.1.7.0.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "C:\\Users\\adil_\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512"
+    "C:\\Users\\adil_\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.0\\system.diagnostics.diagnosticsource.4.7.0.nupkg.sha512",
+    "C:\\Users\\adil_\\.nuget\\packages\\system.spatial\\5.8.4\\system.spatial.5.8.4.nupkg.sha512"
   ],
   "logs": []
 }

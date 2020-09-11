@@ -28,6 +28,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structure", "Structure", "{
 		Article_structure.sql = Article_structure.sql
 		Illustration_structure.sql = Illustration_structure.sql
 		Licence_structure.sql = Licence_structure.sql
+		Relais_structure.sql = Relais_structure.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{160DBD84-C92B-4937-95C8-6D31080E083C}"
@@ -35,6 +36,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datas", "Datas", "{160DBD84
 		Article_datas.sql = Article_datas.sql
 		Illustration_datas.sql = Illustration_datas.sql
 		Licence_datas.sql = Licence_datas.sql
+		Relais_datas.sql = Relais_datas.sql
 	EndProjectSection
 EndProject
 Global

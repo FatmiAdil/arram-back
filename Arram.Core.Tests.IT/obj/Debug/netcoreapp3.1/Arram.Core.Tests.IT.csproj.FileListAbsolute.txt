@@ -225,3 +225,13 @@ C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\Ill
 C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\Illustrations\SHFYAGI2Ghz406.jpg
 C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\Illustrations\SHFYAGI2Ghz408.jpg
 C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\Illustrations\spanish_team.jpg
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\System.Spatial.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\de\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\es\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\fr\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\it\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\ja\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\ko\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\ru\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\zh-Hans\System.Spatial.resources.dll
+C:\Projets\arram-back\arram-back\Arram.Core.Tests.IT\bin\Debug\netcoreapp3.1\zh-Hant\System.Spatial.resources.dll

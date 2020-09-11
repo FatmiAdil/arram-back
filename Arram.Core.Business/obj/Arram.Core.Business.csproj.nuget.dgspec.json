@@ -204,6 +204,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Spatial": {
+              "target": "Package",
+              "version": "[5.8.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

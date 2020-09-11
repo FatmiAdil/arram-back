@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wLh6zJJzkpEdt2l4tsQpAz1Seg69Fq21vj2OIUgdydSO2buEsxJefupph6U23ZWxtNuhlw82PvWOtgFZdzZNIA==",
+  "dgSpecHash": "EIwbF/ADRNDe8FJpYcILGAg5SkvR48+A7ldIl9CZwGqUzSBINYG1dFt7U45TLeePrMAvOp3H1bewHC2oiEhfXA==",
   "success": true,
   "projectFilePath": "C:\\Projets\\arram-back\\arram-back\\Arram.Core.Tests.IT\\Arram.Core.Tests.IT.csproj",
   "expectedPackageFiles": [
@@ -262,6 +262,7 @@
     "C:\\Users\\adil_\\.nuget\\packages\\system.security.principal\\4.0.1\\system.security.principal.4.0.1.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.security.securestring\\4.3.0\\system.security.securestring.4.3.0.nupkg.sha512",
+    "C:\\Users\\adil_\\.nuget\\packages\\system.spatial\\5.8.4\\system.spatial.5.8.4.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512",
     "C:\\Users\\adil_\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",

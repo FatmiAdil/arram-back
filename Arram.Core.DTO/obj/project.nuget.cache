@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7hNtmtalTMP+OdkVMafJ+GmWfwkkH82MhvEkNuHjGVgwRIGBrWRbJdv/g9OdrEeea9DnKweo3zgQCqiWCzT0CQ==",
+  "dgSpecHash": "Dahzq1sqvfDZVPf0n/WA8S3GGrNwo0XvoLqa+MuKLef62tI7/so23M1etSX1IVCHUWlE8ldEkBh3fmMrwdlcoQ==",
   "success": true,
   "projectFilePath": "C:\\Projets\\arram-back\\arram-back\\Arram.Core.DTO\\Arram.Core.DTO.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\adil_\\.nuget\\packages\\system.spatial\\5.8.4\\system.spatial.5.8.4.nupkg.sha512"
+  ],
   "logs": []
 }
