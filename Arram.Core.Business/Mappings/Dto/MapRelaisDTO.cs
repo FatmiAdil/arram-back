@@ -15,6 +15,7 @@ namespace Arram.Core.Business.Mappings
         rtn.Id = objet.Id;
         rtn.Altitude = objet.Altitude;
         rtn.Bande = objet.Bande;
+        rtn.strBande = rtn.Bande == 1 ? "VHF" : "UHF";
         rtn.FreqEntree = objet.FreqEntree;
         rtn.FreqSortie = objet.FreqSortie;
         rtn.Latitude = objet.Latitude;
@@ -45,6 +46,7 @@ namespace Arram.Core.Business.Mappings
         Id = x.Id,
         Altitude = x.Altitude,
         Bande = x.Bande,
+        strBande = x.Bande == 1 ? "VHF" : "UHF",
         FreqEntree = x.FreqEntree,
         FreqSortie = x.FreqSortie,
         Latitude = x.Latitude,

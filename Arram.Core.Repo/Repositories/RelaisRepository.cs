@@ -60,7 +60,7 @@ namespace Arram.Core.Repo.Repositories
      .Where(x => (string.IsNullOrEmpty(searchParams.Nom) ? 1 == 1 : x.Nom.Contains(searchParams.Nom)))
      .Where(x => (string.IsNullOrEmpty(searchParams.Site) ? 1 == 1 : x.Nom.Contains(searchParams.Site)))
      .Where(x => !x.IsDeleted)
-     .OrderByDescending(on => on.DateCreation)
+     .OrderBy(on => on.Region)
      .ToListAsync();
       return retour;
     }

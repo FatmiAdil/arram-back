@@ -23,6 +23,8 @@ namespace Arram.Core.DTO
 		[Required]
 		public int Bande { get; set; }
 
+		public string strBande { get; set; }
+
 		[Required]
 		public int Shift { get; set; }
 
