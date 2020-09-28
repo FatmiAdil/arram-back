@@ -19,6 +19,8 @@ namespace Arram.Core.DAL
     public virtual DbSet<Illustration> Illustration { get; set; }
     public virtual DbSet<Relais> Relais { get; set; }
 
+    public virtual DbSet<Photo> Photo { get; set; }
+
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,7 +29,7 @@ namespace Arram.Core.DAL
       new ArticleConfiguration(modelBuilder.Entity<Article>());
       new IllustrationConfiguration(modelBuilder.Entity<Illustration>());
       new RelaisConfiguration(modelBuilder.Entity<Relais>());
-
+      new PhotoConfiguration(modelBuilder.Entity<Photo>());
     }
   }
 }

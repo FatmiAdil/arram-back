@@ -23,6 +23,9 @@ namespace Arram.Core.API.Configurations
       services.AddTransient<IRelaisLogic, RelaisLogic>();
       services.AddTransient<IRelaisRepository, RelaisRepository>();
 
+      services.AddTransient<IPhotoLogic, PhotoLogic>();
+      services.AddTransient<IPhotoRepository, PhotoRepository>();
+
       return services;
     }
 

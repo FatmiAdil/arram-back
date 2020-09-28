@@ -55,15 +55,7 @@ namespace Arram.Core.Repo.Repositories
     public async Task<List<Licence>> SearchAsync(SearchLicence searchParams, CancellationToken ct = default)
     {
       List<Licence> retour = await _context.Licence
-     //.Include(v => v.Vehicule)
-     //.Include(c => c.Conducteur)
-     //.Include(s => s.StatutAmende)
-     //.Include(t => t.TypeAmende)
-     //.Where(x => (searchParams.VehiculeId == null ? 1 == 1 : x.VehiculeId == searchParams.VehiculeId))
-     //.Where(x => (searchParams.ConducteurId == null ? 1 == 1 : x.ConducteurId == searchParams.ConducteurId))
-     //.Where(x => (searchParams.TypeAmendeId == null ? 1 == 1 : x.TypeAmendeId == searchParams.TypeAmendeId))
-     //.Where(x => (searchParams.StatutAmendeId == null ? 1 == 1 : x.StatutAmendeId == searchParams.StatutAmendeId))
-     //.Where(x => (string.IsNullOrEmpty(searchParams.NumeroAmende) ? 1 == 1 : x.NumeroAmende.Contains(searchParams.NumeroAmende)))
+     .Where(x => (string.IsNullOrEmpty(searchParams.Ville) ? 1 == 1 : x.Ville.ToUpper().Contains(searchParams.Ville.ToUpper())))
      .Where(x => !x.IsDeleted)
      .OrderByDescending(on => on.DateCreation)
      .ToListAsync();
@@ -84,7 +76,7 @@ namespace Arram.Core.Repo.Repositories
             {
               try
               {
-                //Insert Amende
+                //Insert Licence
                 context.Licence.Add(objet);
                 context.SaveChanges();               
 
