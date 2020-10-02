@@ -1,6 +1,6 @@
 ﻿namespace Arram.Core.DTO
 {
-  public class IllustrationDTO : EntityBaseDTO 
+  public class IllustrationDTO : BaseEntityDTO 
   {
     public int ArticleId { get; set; }
 

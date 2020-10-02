@@ -1,5 +1,5 @@
-﻿/****** Object:  Table [dbo].[Relais]    Script Date: 11/09/2020 15:40:15 ******/
-DROP TABLE [dbo].[Relais]
+﻿/****** Object:  Table [dbo].[Relais]    Script Date: 02/10/2020 16:35:26 ******/
+DROP TABLE IF EXISTS [dbo].[Relais]
 GO
 /****** Object:  Table [dbo].[Relais]    Script Date: 11/09/2020 15:40:15 ******/
 SET ANSI_NULLS ON

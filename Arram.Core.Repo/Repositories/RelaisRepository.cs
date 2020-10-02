@@ -78,7 +78,7 @@ namespace Arram.Core.Repo.Repositories
             {
               try
               {
-                //Insert Amende
+                //Insert Relais
                 context.Relais.Add(objet);
                 context.SaveChanges();
 

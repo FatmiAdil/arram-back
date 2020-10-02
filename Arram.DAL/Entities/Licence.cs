@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace Arram.Core.DAL.Entities
 {
@@ -9,8 +7,8 @@ namespace Arram.Core.DAL.Entities
   {
     public Licence()
     {
-      //Article = new HashSet<Article>();
-      //Photo = new HashSet<Photo>();
+      Articles = new HashSet<Article>();
+      Photos = new HashSet<Photo>();
     }
 
     
@@ -54,9 +52,9 @@ namespace Arram.Core.DAL.Entities
     public bool Actif { get; set; }
 
     
-    //public virtual ICollection<Article> Article { get; set; }
+    public virtual ICollection<Article> Articles { get; set; }
 
-    //public virtual ICollection<Photo> Photo { get; set; }
+    public virtual ICollection<Photo> Photos { get; set; }
 
   }
 }

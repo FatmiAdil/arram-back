@@ -134,7 +134,7 @@ namespace Arram.Core.Tests.IT
       // Act
       var response = await Client.PutAsync(request.Url, ContentHelper.GetStringContent(request.Body));
       var jsonFromPostResponse = await response.Content.ReadAsStringAsync();
-      var singleResponse = JsonConvert.DeserializeObject<LicenceDTO>(jsonFromPostResponse);
+      var singleResponse = JsonConvert.DeserializeObject<RelaisDTO>(jsonFromPostResponse);
 
       // Assert
       response.EnsureSuccessStatusCode();

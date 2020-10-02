@@ -3,6 +3,11 @@
    WHERE TABLE_SCHEMA = 'dbo'
    AND TABLE_NAME = 'Licence'))
    DROP TABLE Licence
+
+/****** Object:  Table [dbo].[Licence]    Script Date: 02/10/2020 16:35:26 ******/
+DROP TABLE IF EXISTS [dbo].[Licence]
+GO
+
 /****** Object:  Table [dbo].[Licence]    Script Date: 10/09/2020 21:10:34 ******/
 SET ANSI_NULLS ON
 GO
@@ -22,7 +27,7 @@ CREATE TABLE [dbo].[Licence](
 	[Website] [varchar](80) NULL,
 	[QraLocator] [char](10) NULL,
 	[AnneeLicence] [int] NULL,
-	[Actif] [bit] NOT NULL,
+	[SuppressorId] [int] NULL,
 	[IsDeleted] [bit] NOT NULL,
 	[DateCreation] [datetime] NOT NULL,
 	[DateModification] [datetime] NULL,

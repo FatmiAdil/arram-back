@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -44,26 +44,39 @@ namespace Arram.Core.Repo.Repositories
       return null;
     }
     public async Task<List<Article>> GetAllAsync(CancellationToken ct = default)
-        => await _context.Article.ToListAsync();
-
+    {
+      try
+      {
+        List<Article> retour = await _context.Article.ToListAsync();
+        return retour;
+      }
+      catch(Exception ex)
+      {
+        logitem.Exception = ex;
+        _logger.WriteError(logitem);
+      }
+        return null;
+    }
     public async Task<List<Article>> GetAllActifAsync(CancellationToken ct = default)
-        => await _context.Article
-      .Where(x => !x.IsDeleted)
-       .OrderByDescending(on => on.DateCreation)
-      .ToListAsync();
-
+    {
+      try
+      {
+        List<Article> retour = await _context.Article
+          .Where(x => !x.IsDeleted)
+          .OrderByDescending(on => on.DateCreation)
+          .ToListAsync();
+        return retour;
+      }
+      catch (Exception ex)
+      {
+        logitem.Exception = ex;
+        _logger.WriteError(logitem);
+      }
+      return null;
+    }
     public async Task<List<Article>> SearchAsync(SearchArticle searchParams, CancellationToken ct = default)
     {
       List<Article> retour = await _context.Article
-     //.Include(v => v.Vehicule)
-     //.Include(c => c.Conducteur)
-     //.Include(s => s.StatutAmende)
-     //.Include(t => t.TypeAmende)
-     //.Where(x => (searchParams.VehiculeId == null ? 1 == 1 : x.VehiculeId == searchParams.VehiculeId))
-     //.Where(x => (searchParams.ConducteurId == null ? 1 == 1 : x.ConducteurId == searchParams.ConducteurId))
-     //.Where(x => (searchParams.TypeAmendeId == null ? 1 == 1 : x.TypeAmendeId == searchParams.TypeAmendeId))
-     //.Where(x => (searchParams.StatutAmendeId == null ? 1 == 1 : x.StatutAmendeId == searchParams.StatutAmendeId))
-     //.Where(x => (string.IsNullOrEmpty(searchParams.NumeroAmende) ? 1 == 1 : x.NumeroAmende.Contains(searchParams.NumeroAmende)))
      .Where(x => !x.IsDeleted)
      .OrderByDescending(on => on.DateCreation)
      .ToListAsync();
@@ -84,7 +97,7 @@ namespace Arram.Core.Repo.Repositories
             {
               try
               {
-                //Insert Amende
+                //Insert Article
                 context.Article.Add(objet);
                 context.SaveChanges();
 

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Arram.Core.DTO
 {
-  public class LicenceDTO : EntityBaseDTO
+  public class LicenceDTO : BaseEntityDTO
   {
     public int? UserId { get; set; }
 

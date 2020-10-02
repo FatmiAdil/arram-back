@@ -54,16 +54,7 @@ namespace Arram.Core.Repo.Repositories
 
     public async Task<List<Illustration>> SearchAsync(SearchIllustration searchParams, CancellationToken ct = default)
     {
-      List<Illustration> retour = await _context.Illustration
-     //.Include(v => v.Vehicule)
-     //.Include(c => c.Conducteur)
-     //.Include(s => s.StatutAmende)
-     //.Include(t => t.TypeAmende)
-     //.Where(x => (searchParams.VehiculeId == null ? 1 == 1 : x.VehiculeId == searchParams.VehiculeId))
-     //.Where(x => (searchParams.ConducteurId == null ? 1 == 1 : x.ConducteurId == searchParams.ConducteurId))
-     //.Where(x => (searchParams.TypeAmendeId == null ? 1 == 1 : x.TypeAmendeId == searchParams.TypeAmendeId))
-     //.Where(x => (searchParams.StatutAmendeId == null ? 1 == 1 : x.StatutAmendeId == searchParams.StatutAmendeId))
-     //.Where(x => (string.IsNullOrEmpty(searchParams.NumeroAmende) ? 1 == 1 : x.NumeroAmende.Contains(searchParams.NumeroAmende)))
+      List<Illustration> retour = await _context.Illustration     
      .Where(x => !x.IsDeleted)
      .OrderByDescending(on => on.DateCreation)
      .ToListAsync();
@@ -84,7 +75,7 @@ namespace Arram.Core.Repo.Repositories
             {
               try
               {
-                //Insert Amende
+                //Insert Illustration
                 context.Illustration.Add(objet);
                 context.SaveChanges();
 

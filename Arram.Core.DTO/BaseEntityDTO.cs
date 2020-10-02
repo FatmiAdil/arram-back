@@ -2,7 +2,7 @@
 
 namespace Arram.Core.DTO
 {
-  public abstract class EntityBaseDTO
+  public abstract class BaseEntityDTO
   {   
     public int? Id { get; set; }
     public bool IsDeleted { get; set; } = false;

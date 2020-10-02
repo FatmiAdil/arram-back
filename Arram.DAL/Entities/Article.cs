@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Arram.Core.DAL.Entities
@@ -7,7 +8,7 @@ namespace Arram.Core.DAL.Entities
   {
     public Article()
     {
-      //Illustration = new HashSet<Illustration>();
+      Illustrations = new HashSet<Illustration>();
     }
     
     [Required]
@@ -26,8 +27,8 @@ namespace Arram.Core.DAL.Entities
 
     public virtual Licence Licence { get; set; }
 
-    //public virtual RefTypeArticle RefTypeArticle { get; set; }
+    public virtual TypeArticle RefTypeArticle { get; set; }
 
-    //public virtual ICollection<Illustration> Illustration { get; set; }
+    public virtual ICollection<Illustration> Illustrations { get; set; }
   }
 }

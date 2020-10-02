@@ -1,4 +1,24 @@
-﻿
+﻿IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Illustration]') AND type in (N'U'))
+ALTER TABLE [dbo].[Illustration] DROP CONSTRAINT IF EXISTS [DF_Illustration_DateModification]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Illustration]') AND type in (N'U'))
+ALTER TABLE [dbo].[Illustration] DROP CONSTRAINT IF EXISTS [DF_Illustration_DateCreation]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Illustration]') AND type in (N'U'))
+ALTER TABLE [dbo].[Illustration] DROP CONSTRAINT IF EXISTS [DF_Illustration_isDeleted]
+GO
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[Illustration]') AND type in (N'U'))
+ALTER TABLE [dbo].[Illustration] DROP CONSTRAINT IF EXISTS [FK_Illustration_Article]
+GO
+
+/****** Object:  Index [IX_ArticleId]    Script Date: 02/10/2020 16:35:26 ******/
+DROP INDEX IF EXISTS [IX_ArticleId] ON [dbo].[Illustration]
+GO
+
+/****** Object:  Table [dbo].[Illustration]    Script Date: 02/10/2020 16:35:26 ******/
+DROP TABLE IF EXISTS [dbo].[Illustration]
+GO
+
 /****** Object:  Table [dbo].[Illustration]    Script Date: 11/09/2020 13:14:45 ******/
 SET ANSI_NULLS ON
 GO
@@ -9,6 +29,7 @@ CREATE TABLE [dbo].[Illustration](
 	[ArticleId] [int] NOT NULL,
 	[Description] [varchar](500) NOT NULL,
 	[Url] [varchar](500) NOT NULL,
+	[SuppressorId] [int] NULL,
 	[isDeleted] [bit] NOT NULL,
 	[DateCreation] [datetime] NULL,
 	[DateModification] [datetime] NULL,
@@ -31,6 +52,13 @@ ALTER TABLE [dbo].[Illustration] ADD  CONSTRAINT [DF_Illustration_DateCreation] 
 GO
 ALTER TABLE [dbo].[Illustration] ADD  CONSTRAINT [DF_Illustration_DateModification]  DEFAULT (getdate()) FOR [DateModification]
 GO
+ALTER TABLE [dbo].[Illustration]  WITH CHECK ADD  CONSTRAINT [FK_Illustration_Article] FOREIGN KEY([ArticleId])
+REFERENCES [dbo].[Article] ([Id])
+GO
+ALTER TABLE [dbo].[Illustration] CHECK CONSTRAINT [FK_Illustration_Article]
+GO
+
+
 ALTER TABLE [dbo].[Illustration]  WITH CHECK ADD  CONSTRAINT [FK_Illustration_Article] FOREIGN KEY([ArticleId])
 REFERENCES [dbo].[Article] ([Id])
 GO

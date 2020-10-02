@@ -3,7 +3,7 @@ using System.Spatial;
 
 namespace Arram.Core.DTO
 {
-  public class RelaisDTO : EntityBaseDTO
+  public class RelaisDTO : BaseEntityDTO
   {
 		[Required]
 		public string Region { get; set; }
