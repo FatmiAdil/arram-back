@@ -20,8 +20,8 @@ namespace Arram.Core.DAL
     public virtual DbSet<Lien> Lien { get; set; }
     public virtual DbSet<Parametre> Parametre { get; set; }
     public virtual DbSet<Photo> Photo { get; set; }
-    public virtual DbSet<CategorieLien> RefCategorieLien { get; set; }
-    public virtual DbSet<TypeArticle> RefTypeArticle { get; set; }
+    public virtual DbSet<CategorieLien> CategorieLien { get; set; }
+    public virtual DbSet<TypeArticle> TypeArticle { get; set; }
     public virtual DbSet<Relais> Relais { get; set; }
     public virtual DbSet<Video> Video { get; set; }
 

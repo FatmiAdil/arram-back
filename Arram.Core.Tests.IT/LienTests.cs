@@ -9,11 +9,12 @@ using Xunit;
 
 namespace Arram.Core.Tests.IT
 {
-  public class ArticleTests : IClassFixture<TestFixture<Startup>>
+  
+  public class LienTests : IClassFixture<TestFixture<Startup>>
   {
     private HttpClient Client;
 
-    public ArticleTests(TestFixture<Startup> fixture)
+    public LienTests(TestFixture<Startup> fixture)
     {
       Client = fixture.Client;
     }
@@ -22,7 +23,7 @@ namespace Arram.Core.Tests.IT
     public async Task TestGetAsyncOk()
     {
       // Arrange
-      var request = "/api/article";
+      var request = "/api/lien";
 
       // Act
       var response = await Client.GetAsync(request);
@@ -35,7 +36,7 @@ namespace Arram.Core.Tests.IT
     public async Task TestGetAsyncByIdOk()
     {
       // Arrange
-      var request = "/api/article/51";
+      var request = "/api/lien/1";
 
       // Act
       var response = await Client.GetAsync(request);
@@ -48,7 +49,7 @@ namespace Arram.Core.Tests.IT
     public async Task TestGetAsyncByIdShouldReturnNotFoundError()
     {
       // Arrange
-      var request = "/api/article/99999";
+      var request = "/api/lien/99999";
 
       // Act
       var response = await Client.GetAsync(request);
@@ -61,7 +62,7 @@ namespace Arram.Core.Tests.IT
     public async Task TestSearchOk()
     {
       // Arrange
-      var request = "api/article/search?id=SortOrder=asc&PageIndex=0&PageSize=5";
+      var request = "api/lien/search?id=SortOrder=asc&PageIndex=0&PageSize=5";
 
       // Act
       var response = await Client.GetAsync(request);
@@ -76,21 +77,21 @@ namespace Arram.Core.Tests.IT
       // Arrange
       var request = new
       {
-        Url = "/api/article",
+        Url = "/api/lien",
         Body = new
         {
-          titre = "TI description tests create",
-          texte = "Description article test TI create",
-          dateArticle = DateTime.Now,
-          licenceId = 339,
-          typeArticleId = 1
+          url = "http://www.mincom.gov.ma",
+          texte = "Texte lien test TI create",
+          Desc = "Description Test",
+          Ordre = 1,
+          categorieId = 1
         }
       };
 
       // Act
       var response = await Client.PostAsync(request.Url, ContentHelper.GetStringContent(request.Body));
       var jsonFromPostResponse = await response.Content.ReadAsStringAsync();
-      var singleResponse = JsonConvert.DeserializeObject<ArticleDTO>(jsonFromPostResponse);
+      var singleResponse = JsonConvert.DeserializeObject<LienDTO>(jsonFromPostResponse);
 
       // Assert
       response.EnsureSuccessStatusCode();
@@ -103,22 +104,22 @@ namespace Arram.Core.Tests.IT
       // Arrange
       var request = new
       {
-        Url = "/api/article",
+        Url = "/api/lien",
         Body = new
         {
-          id = 95,
-          titre = "TI description tests update",
-          texte = "Description article test TI",
-          dateArticle = DateTime.Now,
-          licenceId = 339,
-          typeArticleId = 1
+          id = 1,
+          url = "http://www.mincom.gov.ma/updated",
+          texte = "Texte lien test TI update",
+          Desc = "Description Test update",
+          Ordre = 1,
+          categorieId = 1
         }
       };
 
       // Act
       var response = await Client.PutAsync(request.Url, ContentHelper.GetStringContent(request.Body));
       var jsonFromPostResponse = await response.Content.ReadAsStringAsync();
-      var singleResponse = JsonConvert.DeserializeObject<ArticleDTO>(jsonFromPostResponse);
+      var singleResponse = JsonConvert.DeserializeObject<LienDTO>(jsonFromPostResponse);
 
       // Assert
       response.EnsureSuccessStatusCode();
@@ -130,13 +131,13 @@ namespace Arram.Core.Tests.IT
     public async Task TestDeleteOk()
     {
       // Arrange
-      var request = "api/article/95";
+      var request = "api/lien/95";
 
       // Act
       var response = await Client.DeleteAsync(request);
       var getResponse = await Client.GetAsync(request);
       var jsonFromPostResponse = await getResponse.Content.ReadAsStringAsync();
-      var singleResponse = JsonConvert.DeserializeObject<ArticleDTO>(jsonFromPostResponse);
+      var singleResponse = JsonConvert.DeserializeObject<LicenceDTO>(jsonFromPostResponse);
 
       // Assert
       response.EnsureSuccessStatusCode();

@@ -30,7 +30,7 @@ namespace Arram.Core.Repo.Repositories
     {
       try
       {
-        var retour = await _context.RefTypeArticle
+        var retour = await _context.TypeArticle
           .Where(x => x.Id == id).FirstOrDefaultAsync();
         return retour;
       }
@@ -43,17 +43,17 @@ namespace Arram.Core.Repo.Repositories
       return null;
     }
     public async Task<List<TypeArticle>> GetAllAsync(CancellationToken ct = default)
-        => await _context.RefTypeArticle.ToListAsync();
+        => await _context.TypeArticle.ToListAsync();
 
     public async Task<List<TypeArticle>> GetAllActifAsync(CancellationToken ct = default)
-        => await _context.RefTypeArticle
+        => await _context.TypeArticle
       .Where(x => !x.IsDeleted)
        .OrderByDescending(on => on.DateCreation)
       .ToListAsync();
 
     public async Task<List<TypeArticle>> SearchAsync(SearchTypeArticle searchParams, CancellationToken ct = default)
     {
-      List<TypeArticle> retour = await _context.RefTypeArticle
+      List<TypeArticle> retour = await _context.TypeArticle
 
      .Where(x => !x.IsDeleted)
      .OrderByDescending(on => on.DateCreation)
@@ -76,7 +76,7 @@ namespace Arram.Core.Repo.Repositories
               try
               {
                 //Insert RefTypeArticle
-                context.RefTypeArticle.Add(objet);
+                context.TypeArticle.Add(objet);
                 context.SaveChanges();
 
                 //End Transaction 
@@ -96,14 +96,14 @@ namespace Arram.Core.Repo.Repositories
 
     public async Task<TypeArticle> UpdateAsync(TypeArticle objet)
     {
-      _context.Entry(await _context.RefTypeArticle.FirstOrDefaultAsync(x => x.Id == objet.Id)).CurrentValues.SetValues(objet);
+      _context.Entry(await _context.TypeArticle.FirstOrDefaultAsync(x => x.Id == objet.Id)).CurrentValues.SetValues(objet);
       await _context.SaveChangesAsync();
       return objet;
     }
 
     public async Task<bool> DeleteAsync(int Id)
     {
-      TypeArticle entite = await _context.RefTypeArticle.Where(x => x.Id == Id).FirstOrDefaultAsync();
+      TypeArticle entite = await _context.TypeArticle.Where(x => x.Id == Id).FirstOrDefaultAsync();
       if (null != entite)
       {
         entite.IsDeleted = true;

@@ -24,14 +24,14 @@ namespace Arram.Core.Repo.Repositories
       _logger = logger;
       logitem = new LogItem() { NomApplication = "Arram", Layer = "Repository" };
     }
-    private async Task<bool> RefCategorieLienExists(int id, CancellationToken ct = default) =>
+    private async Task<bool> CategorieLienExists(int id, CancellationToken ct = default) =>
         await _context.Illustration.AnyAsync(a => a.Id == id, ct);
 
     public async Task<CategorieLien> GetAsync(int id)
     {
       try
       {
-        var retour = await _context.RefCategorieLien
+        var retour = await _context.CategorieLien
           .Where(x => x.Id == id).FirstOrDefaultAsync();
         return retour;
       }
@@ -44,17 +44,17 @@ namespace Arram.Core.Repo.Repositories
       return null;
     }
     public async Task<List<CategorieLien>> GetAllAsync(CancellationToken ct = default)
-        => await _context.RefCategorieLien.ToListAsync();
+        => await _context.CategorieLien.ToListAsync();
 
     public async Task<List<CategorieLien>> GetAllActifAsync(CancellationToken ct = default)
-        => await _context.RefCategorieLien
+        => await _context.CategorieLien
       .Where(x => !x.IsDeleted)
        .OrderByDescending(on => on.DateCreation)
       .ToListAsync();
 
     public async Task<List<CategorieLien>> SearchAsync(SearchCategorieLien searchParams, CancellationToken ct = default)
     {
-      List<CategorieLien> retour = await _context.RefCategorieLien     
+      List<CategorieLien> retour = await _context.CategorieLien
      .Where(x => !x.IsDeleted)
      .OrderByDescending(on => on.DateCreation)
      .ToListAsync();
@@ -76,7 +76,7 @@ namespace Arram.Core.Repo.Repositories
               try
               {
                 //Insert RefCategorieLien
-                context.RefCategorieLien.Add(objet);
+                context.CategorieLien.Add(objet);
                 context.SaveChanges();
 
                 //End Transaction 
@@ -96,14 +96,14 @@ namespace Arram.Core.Repo.Repositories
 
     public async Task<CategorieLien> UpdateAsync(CategorieLien objet)
     {
-      _context.Entry(await _context.RefCategorieLien.FirstOrDefaultAsync(x => x.Id == objet.Id)).CurrentValues.SetValues(objet);
+      _context.Entry(await _context.CategorieLien.FirstOrDefaultAsync(x => x.Id == objet.Id)).CurrentValues.SetValues(objet);
       await _context.SaveChangesAsync();
       return objet;
     }
 
     public async Task<bool> DeleteAsync(int Id)
     {
-      CategorieLien entite = await _context.RefCategorieLien.Where(x => x.Id == Id).FirstOrDefaultAsync();
+      CategorieLien entite = await _context.CategorieLien.Where(x => x.Id == Id).FirstOrDefaultAsync();
       if (null != entite)
       {
         entite.IsDeleted = true;

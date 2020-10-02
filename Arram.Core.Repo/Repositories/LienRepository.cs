@@ -31,6 +31,7 @@ namespace Arram.Core.Repo.Repositories
       try
       {
         var retour = await _context.Lien
+          .Include(c => c.CategorieLien)
           .Where(x => x.Id == id).FirstOrDefaultAsync();
         return retour;
       }
@@ -43,21 +44,54 @@ namespace Arram.Core.Repo.Repositories
       return null;
     }
     public async Task<List<Lien>> GetAllAsync(CancellationToken ct = default)
-        => await _context.Lien.ToListAsync();
-
+    {
+      try
+      {
+        List<Lien> retour = await _context.Lien.Include(c => c.CategorieLien).ToListAsync();
+        return retour;
+      }
+      catch (Exception ex)
+      {
+        logitem.Exception = ex;
+        _logger.WriteError(logitem);
+      }
+      return null;
+    }
     public async Task<List<Lien>> GetAllActifAsync(CancellationToken ct = default)
-        => await _context.Lien
-      .Where(x => !x.IsDeleted)
-       .OrderByDescending(on => on.DateCreation)
-      .ToListAsync();
-
+    {
+      try
+      {
+        List<Lien> retour = await _context.Lien
+       .Include(c => c.CategorieLien)
+       .Where(x => !x.IsDeleted)
+        .OrderByDescending(on => on.DateCreation)
+       .ToListAsync();
+        return retour;
+      }
+      catch (Exception ex)
+      {
+        logitem.Exception = ex;
+        _logger.WriteError(logitem);
+      }
+      return null;
+    }
     public async Task<List<Lien>> SearchAsync(SearchLien searchParams, CancellationToken ct = default)
     {
-      List<Lien> retour = await _context.Lien     
-     .Where(x => !x.IsDeleted)
-     .OrderByDescending(on => on.DateCreation)
-     .ToListAsync();
-      return retour;
+      try
+      {
+        List<Lien> retour = await _context.Lien
+          .Include(c => c.CategorieLien)
+          .Where(x => !x.IsDeleted)
+          .OrderByDescending(on => on.DateCreation)
+          .ToListAsync();
+        return retour;
+      }
+      catch (Exception ex)
+      {
+        logitem.Exception = ex;
+        _logger.WriteError(logitem);
+      }
+      return null;
     }
 
     public async Task<Lien> CreateAsync(Lien objet)

@@ -20,6 +20,9 @@ namespace Arram.Core.API.Configurations
       services.AddTransient<IIllustrationLogic, IllustrationLogic>();
       services.AddTransient<IIllustrationRepository, IllustrationRepository>();
 
+      services.AddTransient<ILienLogic, LienLogic>();
+      services.AddTransient<ILienRepository, LienRepository>();
+
       services.AddTransient<IParametreLogic, ParametreLogic>();
       services.AddTransient<IParametreRepository, ParametreRepository>();
 
